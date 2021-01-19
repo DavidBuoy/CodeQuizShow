@@ -1,3 +1,18 @@
 body{
-    background-color: aquamarine;
+    background-color: lightgray;
+}
+#time{
+    float: left;
+}
+.btn{
+margin: 20px;
+padding: 20px;
+}
+
+/* styling of the hover tags */
+a{
+    color:black
+}
+a:hover{
+    color:red !important;
 }

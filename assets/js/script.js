@@ -1,26 +1,23 @@
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+// function startTimer(duration, display) {
+//     var timer = duration, minutes, seconds;
+//     setInterval(function () {
+//         minutes = parseInt(timer / 60, 10);
+//         seconds = parseInt(timer % 60, 10);
 
-        display.textContent = minutes + ":" + seconds;
+//         minutes = minutes < 10 ? "0" + minutes : minutes;
+//         seconds = seconds < 10 ? "0" + seconds : seconds;
 
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}
+//         display.textContent = minutes + ":" + seconds;
 
-window.onload = function () {
-    var timer = 60
-        display = document.querySelector('#time');
-    startTimer(timer, display);
-};
+//         if (--timer < 0) {
+//             timer = duration;
+//         }
+//     }, 1000);
+// }
 
-addEventListener("click", function () {
-    count++;
-    setCounterText();
-});
+// window.onload = function () {
+//     var fiveMinutes = 60
+//         display = document.querySelector('#time');
+//     startTimer(fiveMinutes, display);
+// };
+

@@ -12,34 +12,76 @@
 
 <body>
     <header>
+        <!-- START PART OF INDEX -->
+        <!-- All this does is give you the ready to start the game -->
+
 
         <nav class="nav">
+            <!-- THIS IS WHERE I WOULD PUT THE HIGH SCORE FROM LOCAL STORAGE -->
             <a class="nav-link float-left" href="#">High Score</a>
 
-            <a class="nav-link float-right" href="#"></a>
+
+
+            <!-- THIS IS THE TIMER DISPLAYE AFTER YOU START THE GAME -->
+            <a class="nav-link float-right" href="#">
+                <div id="countdown"></div>
+            </a>
         </nav>
     </header>
 
-    <h2 class="time" style="text-align:center;"></h2>
+
     <div id="main"></div>
-
-    <div class="container flex">
-
+    <div class="container start flex">
         <div class="row">
             <div class="col text-center">
                 <h1>The Great American Javascript QuizShow</h1>
             </div>
         </div>
 
+    <!-- BELOW IS THE BUTTON THAT STARTS THE GAME -->
         <div class="row">
             <div class="col text-center">
                 <div class="btn-group-vertical" role="group" aria-label="Basic example">
-                    <button id="btnStartGame" type="button" class="btn btn-secondary">
-                        <a href="./game.html">Click here to start!</a>
-                    </button>
+                    <button id="btnStartGame" type="button" class="btn btn-secondary">Start Quiz</button>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- Games -->
+
+
+
+    <div class="container game flex">
+<!-- THIS STARTS THE TIMER COUNT DOWN ONCE THE START GAME BUTTON IS CLICKED -->
+        <div id="startButtons"></div>
+
+
+
+
+
+        <h1 class="time" style="text-align:center;"></h1>
+        <div class="row">
+            <div class="col text-center">
+                <h1 id="question"></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                    <button id="answer1" type="button"
+                        class="choices btn btn-secondary"></button>
+                    <button id="answer2" type="button"
+                        class="choices btn btn-secondary"></button>
+                    <button id="answer3" type="button" class="choices btn btn-secondary"></button>
+                    <button id="answer4" type="button" class="choices btn btn-secondary"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="thatsWrongText" class="text-center">This is where it should pop up to say your wrong, if you wait till the time runs down the game will end.</div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

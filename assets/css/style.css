@@ -8,6 +8,13 @@ body{
 margin: 20px;
 padding: 20px;
 }
+.start{
+
+}
+
+.game{
+display: none;
+}
 
 /* styling of the hover tags */
 a{
